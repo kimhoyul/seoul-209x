@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#191e2e"><title>SEOUL 209X — 마지막 불빛 · 2D</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%23191e2e'/%3E%3Cpath d='M5 20 20 12 35 20 20 28Z' fill='%23eeb985'/%3E%3C/svg%3E"><link rel="stylesheet" href="style.css"></head>
+<body>
+<canvas id="world" aria-label="서울 아포칼립스 옥상 2D 게임"></canvas>
+<div class="grain"></div><div class="vignette"></div>
+<header id="hud" hidden><div class="brand"><span class="tiny">SEOUL 209X <i> / </i> PIXEL EDITION</span><h1>마지막 불빛</h1><div class="task"><span id="step">01</span><div><small>현재 목표</small><p id="objective">보급 상자에서 퓨즈 찾기</p></div></div><div id="progress"><b></b><b></b><b></b><b></b></div></div><div class="status"><div id="clock">18:42</div><small>생존 287일째</small><div id="power">전력 대기</div></div></header>
+<nav id="tools" hidden aria-label="게임 설정"><button id="night" title="황혼 / 야간" aria-label="야간 전환">달빛</button><button id="overview" title="옥상 전체 보기" aria-label="옥상 전체 보기">전체</button><button id="zoomIn" aria-label="확대">＋</button><button id="zoomOut" aria-label="축소">−</button><button id="audio" aria-pressed="false">소리 OFF</button><button id="help" aria-label="조작 도움말">?</button></nav>
+<div id="near" hidden></div><div id="toast" role="status"></div>
+<div id="desktopHint" hidden>W A S D <span>이동</span> · SHIFT <span>달리기</span> · E <span>조작</span> · 클릭 <span>자동 이동</span></div>
+<div id="touch" hidden><div id="stick" aria-label="이동 조이스틱"><div class="cross"></div><div id="knob"></div></div><div class="touchRight"><button id="run" aria-pressed="false">달리기</button><button id="action">조작<span>E</span></button></div></div>
+<div id="legend" hidden><span class="dot"></span> 남아 있는 작은 일상 <span id="collection">0 / 3</span></div>
+<div id="menu"><div class="menuPanel"><div class="issue"><span>AN APOCALYPTIC SEOUL STORY</span><b>02</b></div><div class="tag">2D ISOMETRIC · PLAYABLE</div><h2>SEOUL<br><em>209X</em><span>마지막 불빛</span></h2><p>도시는 멈췄다.<br>우리의 하루는, 아직 끝나지 않았다.</p><button id="start">옥상으로 돌아가기 <span>↗</span></button><small>퓨즈를 찾고, 전력을 복구하고,<br>서울 어딘가로 마지막 신호를 보내세요.</small><div class="menuFoot">움직이는 픽셀, 남아 있는 온기.<span>CANVAS 2D / NO WEBGL</span></div></div><div class="sceneNote">서울 · 어느 옥상에서<br><b>37° N — AFTER THE END</b></div></div>
+<div id="shade" hidden><section id="dialog" role="dialog" aria-modal="true" aria-labelledby="dialogTitle"><button id="close" aria-label="닫기">×</button><div class="tiny" id="dialogTag">SURVIVOR'S JOURNAL</div><h2 id="dialogTitle"></h2><p id="dialogText"></p><div id="extra"></div><div id="dialogButtons"></div></section></div>
+<script src="game.js"></script></body></html>
